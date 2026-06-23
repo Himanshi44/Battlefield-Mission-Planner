@@ -1,0 +1,25 @@
+# Battlefield Mission Planner — Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core LLM + API
+groq>=0.9.0                    # Groq Python SDK (OpenAI-compatible client)
+
+# LangGraph + LangChain (multi-agent framework)
+langgraph>=0.2.0               # LangGraph StateGraph, Send(), create_react_agent
+langchain>=0.3.0               # LangChain core
+langchain-groq>=0.2.0          # LangChain Groq integration
+langchain-core>=0.3.0          # LangChain base classes (tools, messages)
+
+# Streamlit UI
+streamlit>=1.39.0              # Web UI framework
+
+# Data validation
+pydantic>=2.0.0                # Structured outputs, data validation
+
+# Utilities
+python-dotenv>=1.0.0           # Load .env file
+requests>=2.28.0               # HTTP client (used in groq_client.py fallback)
+
+# Optional: for future extensions
+# numpy>=1.24.0                # Numerical MCTS computations
+# matplotlib>=3.7.0            # Visualization of MCTS tree
